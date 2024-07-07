@@ -1,4 +1,4 @@
 print("waevievbsilvisvugnuisvnvmzdlbzznkgsiu")
-print("79h7ohgp87")
-print("iegjgug798oioer")
+print("79h7guikfyikdcohgp87")
+print("iegjfkigucogug798oioer")
 print("hbisbghinsgi")
