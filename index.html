@@ -17,5 +17,19 @@
 <body>
     <h1>Hello World</h1>
 </body>
-<py-script>print('my pyton')</py-script>
+<py-script> <py-config>
+    plugins = [
+      "https://pyscript.net/latest/plugins/python/py_tutor.py"
+    ]
+</py-config>
+
+<section class="pyscript">
+    Hello world! <br>
+    This is the current date and time, as computed by Python:
+    <py-script>
+        from datetime import datetime
+        now = datetime.now()
+        display(now.strftime("%m/%d/%Y, %H:%M:%S"))
+    </py-script>
+</section></py-script>
 </html>
