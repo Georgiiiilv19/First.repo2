@@ -1,6 +1,7 @@
-import random
-min = 1
-max = random.randrange(1,1000)
-quantity = input("Численнність квитків ")
-lottery_numbers = get_numbers_ticket = (min, max, quantity)
-print("Ваші лотерейні числа:", lottery_numbers)
+from datetime import datetime
+
+nbm = datetime(year=2022, month=9, day=18) 
+current_date = datetime.now()
+
+days_since = current_date.toordinal() - nbm.toordinal()
+print(days_since)
