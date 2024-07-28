@@ -1,7 +1,12 @@
 from datetime import datetime
 
-nbm = datetime(year=2022, month=9, day=18) 
-current_date = datetime.now()
+def get_days_from_today(date):
+    try:
+        date_obj = datetime.strptime(date, "%Y-%m-%d")
+        current_date = datetime.today()
+        difference = current_date - date_obj
+        return difference.days
+    except ValueError:
+        return "Invalid date format. Enter date in 'YYYY-MM-DD' format."
 
-days_since = current_date.toordinal() - nbm.toordinal()
-print(days_since)
+print(get_days_from_today("1987-10-03"))
